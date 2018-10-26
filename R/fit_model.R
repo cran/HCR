@@ -28,7 +28,8 @@ L<-function(X,YPrime,Y,score_type="bic",is_anm=FALSE,is_cyclic=FALSE,...){
   B=B[sel]
   freq=freq[sel]
 
-  d=nyp*(uniqueN(Y)-1)+(nx-1)+nx
+  #d=nyp*(uniqueN(Y)-1)+(nx-1)+nx
+  d=nyp*(uniqueN(Y)-1)+nx-1
   if(score_type=="log"){
     return(sum(freq*log(B))+sum(freqx*log(px))) #log-likelihood
   }else if(score_type=="bic"){
@@ -43,7 +44,7 @@ L<-function(X,YPrime,Y,score_type="bic",is_anm=FALSE,is_cyclic=FALSE,...){
 
 
 #' @title Hidden Compact Representation Model
-#' @description Causal Discovery on Discrete Data using Hidden Compact Representation.
+#' @description Causal Discovery from Discrete Data using Hidden Compact Representation.
 #' @param X The data of cause.
 #' @param Y The data of effect.
 #' @param score_type You can choose "bic","aic","aicc","log" as the type of score to fit the HCR model. Default: bic
@@ -194,8 +195,10 @@ HCR.fast<-function(X,Y,score_type="bic",...){
   repeat{
     # Combine best ith, jth categories at each iteration.
     iscontinue=F
-    d   =nyp*(ny-1)+(nx-1)+nx
-    dnew=(nyp-1)*(ny-1)+(nx-1)+nx
+    # d   =nyp*(ny-1)+(nx-1)+nx
+    # dnew=(nyp-1)*(ny-1)+(nx-1)+nx
+    d   =nyp*(ny-1)+nx-1
+    dnew=(nyp-1)*(ny-1)+nx-1
     if (score_type=="bic") {
       penalty1=d/2*log(m)
       penalty2=dnew/2*log(m)

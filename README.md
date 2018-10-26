@@ -4,7 +4,7 @@
 
 This code provides a method to fit the hidden compact representation model as well as to discover the causal direction on discrete data. 
 
-Please cite "Ruichu Cai, Jie Qiao, Kun Zhang, Zhenjie Zhang, Zhifeng Hao. Causal Discovery on Discrete Data using Hidden Compact Representation. NIPS 2018." 
+Please cite "Ruichu Cai, Jie Qiao, Kun Zhang, Zhenjie Zhang, Zhifeng Hao. Causal Discovery from Discrete Data using Hidden Compact Representation. NIPS 2018." 
 ## Installation
 
 ```

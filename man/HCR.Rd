@@ -28,7 +28,7 @@ HCR(X, Y, score_type = "bic", is_anm = FALSE, is_cyclic = FALSE,
 The fitted HCR model and its score.
 }
 \description{
-Causal Discovery on Discrete Data using Hidden Compact Representation.
+Causal Discovery from Discrete Data using Hidden Compact Representation.
 }
 \examples{
 library(data.table)

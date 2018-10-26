@@ -1,7 +1,7 @@
 citHeader("To cite HCR in publications use:")
 
 citEntry(entry = "inproceedings",
-  title        = "Causal Discovery on Discrete Data using Hidden Compact Representation",
+  title        = "Causal Discovery from Discrete Data using Hidden Compact Representation",
   author       = personList(as.person("Ruichu Cai"),
                    as.person("Jie Qiao"),
                    as.person("Kun Zhang"),
@@ -10,6 +10,6 @@ citEntry(entry = "inproceedings",
   booktitle    = "Advances in Neural Information Processing Systems",
   year         = "2018",
   textVersion  = paste("Ruichu Cai, Jie Qiao, Kun Zhang, Zhenjie Zhang, Zhifeng Hao.",
-  "Causal Discovery on Discrete Data using Hidden Compact Representation.",
+  "Causal Discovery from Discrete Data using Hidden Compact Representation.",
   "NIPS 2018.")
 )
